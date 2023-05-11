@@ -52,4 +52,9 @@ public class SignView extends View {
         invalidate();
         return true;
     }
+
+    public void clear(){
+        signViewData.getLines().clear();
+        invalidate();
+    }
 }
