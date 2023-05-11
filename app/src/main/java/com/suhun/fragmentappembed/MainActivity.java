@@ -38,10 +38,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void goPage1Fun(View view){
-
+        FragmentTransaction transaction = fmgr.beginTransaction();
+        transaction.replace(R.id.container, f1);
+        transaction.commit();
     }
 
     public void goPage2Fun(View view){
+        FragmentTransaction transaction = fmgr.beginTransaction();
+        transaction.replace(R.id.container, f2);
+        transaction.commit();
 
     }
 }
