@@ -13,6 +13,7 @@ import android.view.ViewGroup;
 public class F2Fragment extends Fragment {
     private View view;
     private MainActivity activity;
+    private AppData appData;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -27,5 +28,6 @@ public class F2Fragment extends Fragment {
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
         activity = (MainActivity)context;
+        appData = (AppData) activity.getApplication();
     }
 }
